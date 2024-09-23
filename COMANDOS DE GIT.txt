@@ -1,0 +1,56 @@
+-------------------------
+|	COMANDOS	|
+-------------------------
+
+- CLONAR UN REPOSITORIO
+git clone "https://direccion/del/repositorio.git"
+
+------------------------------------------------------------------------------------
+(PARA CAMBIOS EN LOS ARCHIVOS DE TRABAJO)
+
+- AGREGAR CAMBIOS DE UN ARCHIVO ESPECIFICO A LA FASE DE < STAGE >
+git add nombreDelArchivo.extensión (Ejemplo: git add claseDePrueba.java)
+
+- VER DIFERENCIAS DE MODIFICACIONES
+git diff nombreDelArchivo.extension (Ejemplo: git diff claseDePrueba.java)
+
+- AGREGAR TODOS LOS CAMBIOS A LA FASE DE < STAGE >
+git add .
+
+- UNA VEZ LOS ARCHIVOS ESTÁN EN LA FASE DE < STAGE > YA ESTÁN LISTOS PARA COMMIT.
+git commit -m "Se agrega txt CODIGO_PRUEBA con un comentario"
+
+- CUANDO LOS CAMBIOS ESTÁN CONFIRMADOS SE HACE UN PUSH
+git push origin nombreDeLaRama
+
+
+--------
+EXTRAS |
+--------
+-- DESCARTAR CAMBIOS REALIZADOS < ETAPA DE MODIFICACION >
+git restore nombreDeArchivo.extension (Ejemplo: git restore claseDePrueba.java)
+
+-- DEVOLVER CAMBIOS DE <STAGE> HACIA <ETAPA DE MODIFICACION>
+git restore --staged nombreDeArchivo.extension (Ejemplo: git restore --staged claseDePrueba.java)
+
+-- VISUALIZAR ESTADO Y CAMBIOS ENTRE LAS RAMAS
+gitk
+
+------------------------------------------------------------------------------------
+
+(PARA RAMAS)
+
+- VISUALIZAR LAS RAMAS
+git branch
+
+- CREAR UNA NUEVA RAMA
+git branch nombreDeNuevaRama
+
+- CRUZARTE HACIA OTRA RAMA
+git checkout nombreDeNuevaRama
+
+- OBTENER CAMBIOS DE UNA RAMA HACIA MI RAMA
+git pull origin nombreDeRama
+
+
+
